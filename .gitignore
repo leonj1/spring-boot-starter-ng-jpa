@@ -1,0 +1,9 @@
+.project
+.classpath
+.settings/
+target/
+bower_components/
+.iml
+LICENSE
+README.md
+.idea
