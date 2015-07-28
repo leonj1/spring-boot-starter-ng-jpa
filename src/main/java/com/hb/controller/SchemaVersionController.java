@@ -1,7 +1,7 @@
 package com.hb.controller;
 
-import com.hb.model.Team;
-import com.hb.repository.TeamRepository;
+import com.hb.model.SchemaVersion;
+import com.hb.repository.SchemaVersionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,33 +12,33 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * Created by jose on 6/6/15.
+ * Created by jose on 7/27/15.
  */
 @RestController
-@RequestMapping("/team")
-public class TeamController {
+@RequestMapping("/schemaversions")
+public class SchemaVersionController {
     @Autowired
-    private TeamRepository repo;
+    private SchemaVersionRepository repo;
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Team> findTeams() {
+    public List<SchemaVersion> getSchemaVersions() {
         return repo.findAll();
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Team addItem(@RequestBody Team team) {
-        team.setId(null);
-        return repo.saveAndFlush(team);
+    public SchemaVersion addSchemaVersion(@RequestBody SchemaVersion schemaVersion) {
+        schemaVersion.setId(null);
+        return repo.saveAndFlush(schemaVersion);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public Team updateItem(@RequestBody Team updatedTeam, @PathVariable Long id) {
-        updatedTeam.setId(id);
-        return repo.saveAndFlush(updatedTeam);
+    public SchemaVersion updateSchemaVersion(@RequestBody SchemaVersion schemaVersion, @PathVariable Long id) {
+        schemaVersion.setId(id);
+        return repo.saveAndFlush(schemaVersion);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteItem(@PathVariable Long id) {
+    public void deleteSchemaVersion(@PathVariable Long id) {
         repo.delete(id);
     }
 }
