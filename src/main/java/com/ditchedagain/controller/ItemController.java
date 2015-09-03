@@ -1,12 +1,12 @@
-package com.hb.controller;
+package com.ditchedagain.controller;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.hb.model.Item;
-import com.hb.repository.ItemRepository;
+import com.ditchedagain.model.Item;
+import com.ditchedagain.repository.ItemRepository;
 
 @RestController
 @RequestMapping("/items")

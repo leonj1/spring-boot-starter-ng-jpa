@@ -1,0 +1,27 @@
+html {
+    background: url(../images/collaboration2.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body { padding-top: 52px; }
+
+.background-small{
+    height:200px;
+    width:200px;
+    background: url(../images/collaboration2.svg) no-repeat center center fixed;
+}
+
+.background-big{
+    background: url(../images/collaboration2.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.register-modal {
+    left: 100px;
+}

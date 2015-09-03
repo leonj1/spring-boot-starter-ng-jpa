@@ -1,6 +1,6 @@
-package com.hb.repository;
+package com.ditchedagain.repository;
 
-import com.hb.model.SchemaVersion;
+import com.ditchedagain.model.SchemaVersion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

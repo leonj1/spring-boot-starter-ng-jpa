@@ -1,6 +1,6 @@
-package com.hb.repository;
+package com.ditchedagain.repository;
 
-import com.hb.model.Player;
+import com.ditchedagain.model.Player;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

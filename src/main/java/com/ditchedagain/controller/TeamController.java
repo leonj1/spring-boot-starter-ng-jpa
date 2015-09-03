@@ -1,7 +1,7 @@
-package com.hb.controller;
+package com.ditchedagain.controller;
 
-import com.hb.model.Team;
-import com.hb.repository.TeamRepository;
+import com.ditchedagain.model.Team;
+import com.ditchedagain.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

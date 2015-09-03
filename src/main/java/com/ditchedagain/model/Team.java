@@ -1,4 +1,4 @@
-package com.hb.model;
+package com.ditchedagain.model;
 
 import com.google.common.base.Objects;
 import com.google.common.collect.Sets;

@@ -1,7 +1,7 @@
-package com.hb.controller;
+package com.ditchedagain.controller;
 
-import com.hb.model.SchemaVersion;
-import com.hb.repository.SchemaVersionRepository;
+import com.ditchedagain.model.SchemaVersion;
+import com.ditchedagain.repository.SchemaVersionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

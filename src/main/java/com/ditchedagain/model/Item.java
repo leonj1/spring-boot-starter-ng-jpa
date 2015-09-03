@@ -1,4 +1,4 @@
-package com.hb.model;
+package com.ditchedagain.model;
 
 import javax.persistence.*;
 
